@@ -12,7 +12,7 @@
     "@crawlee/cheerio": "^3.5.0"
   },
   "scripts": {
-    "start": "node src/main.js"
+    "start": "node main.js"
   },
   "author": "devan",
   "license": "ISC"
