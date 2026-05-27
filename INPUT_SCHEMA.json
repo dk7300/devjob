@@ -1,5 +1,5 @@
 {
-  "SchemaVersion": 1,
+  "schemaVersion": 1,
   "title": "LinkedIn Job Hunt Scraper Input",
   "description": "Configure the target job roles, locations, time filters, and extraction limit.",
   "type": "object",
