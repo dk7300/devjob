@@ -4,7 +4,7 @@
   "title": "Job Hunt SEO & Text Scraper",
   "version": "1.0.0",
   "description": "Extracts title, description, headings, word counts, and links from job search and listing pages.",
-  "input": "./.actor/INPUT_SCHEMA.json",
+  "input": "./INPUT_SCHEMA.json",
   "buildTag": "latest",
   "memoryMbytes": 512
 }
