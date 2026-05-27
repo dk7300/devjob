@@ -1,0 +1,61 @@
+{
+  "actorInputSchemaVersion": 1,
+  "title": "LinkedIn Job Hunt Scraper Input",
+  "description": "Configure the target job roles, locations, time filters, and extraction limit.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "jobTitles": {
+      "title": "Job Titles / Keywords",
+      "type": "array",
+      "description": "List of job titles or search terms to crawl (related to graphic design/creative fields).",
+      "editor": "stringList",
+      "prefill": [
+        "Graphic Designer",
+        "UI/UX Designer",
+        "Designer",
+        "Social Media Designer",
+        "Junior Designer",
+        "Print Media Designer"
+      ]
+    },
+    "locations": {
+      "title": "Job Locations",
+      "type": "array",
+      "description": "List of geographic locations to search in.",
+      "editor": "stringList",
+      "prefill": [
+        "Toronto, Ontario, Canada",
+        "Markham, Ontario, Canada",
+        "Durham Region, Ontario, Canada"
+      ]
+    },
+    "maxJobs": {
+      "title": "Maximum Job Postings to Extract",
+      "type": "integer",
+      "description": "Overall target limit of job postings to scrape across all search combinations.",
+      "default": 50,
+      "minimum": 1
+    },
+    "postedPast24hOnly": {
+      "title": "Only Posted in Last 24 Hours",
+      "type": "boolean",
+      "description": "If enabled, restricts results to job postings added within the last 24 hours.",
+      "default": true
+    },
+    "proxyConfiguration": {
+      "title": "Proxy Configuration",
+      "type": "object",
+      "description": "Select proxies to prevent blocking. Apify proxy is recommended.",
+      "editor": "proxy",
+      "default": {
+        "useApifyProxy": true
+      }
+    }
+  },
+  "required": [
+    "jobTitles",
+    "locations",
+    "maxJobs"
+  ]
+}

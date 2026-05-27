@@ -1,0 +1,19 @@
+{
+  "name": "job-hunt-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "An Apify actor that crawls job listings and web pages to extract key text and SEO structures.",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "apify": "^3.1.0",
+    "crawlee": "^3.5.0",
+    "@crawlee/cheerio": "^3.5.0"
+  },
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "author": "devan",
+  "license": "ISC"
+}
